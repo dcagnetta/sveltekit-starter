@@ -1,7 +1,7 @@
 <script context="module">
   export async function load({ page, fetch }) {
     const response = await fetch(
-      `https://dev.to/api/articles/${page.params.slug}`
+       `https://jsonplaceholder.typicode.com/todos/${page.params.slug}`
     )
     const post = await response.json()
     return {
