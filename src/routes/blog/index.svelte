@@ -1,7 +1,7 @@
 <script context="module">
   export async function load({ fetch }) {
     const response = await fetch(
-      `https://dev.to/api/articles?username=bdesigned`
+      `https://jsonplaceholder.typicode.com/todos`
     )
     const posts = await response.json()
     return {
